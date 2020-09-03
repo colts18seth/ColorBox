@@ -1,14 +1,19 @@
 import React from 'react';
+import './BoxList.css';
 import Box from './Box';
 import NewBoxForm from './NewBoxForm';
 
-function BoxList() {
+const BoxList = () => {
+
     return (
-        <div className="BoxList">
-            // TODO Add all box components here
-            <Box height="100" width="100" backgroundColor="blue" />
-            {/* < NewBoxForm /> */}
-        </div>
+        <>
+            <ul className="BoxList">
+                <li><Box height={100} width={100} backgroundColor="blue" /></li>
+                <li><Box height={100} width={100} backgroundColor="black" /></li>
+                <li><Box height={100} width={100} backgroundColor="purple" /></li>
+            </ul>
+            <div>< NewBoxForm /></div>
+        </>
     );
 }
 

@@ -1,9 +1,14 @@
 import React from 'react';
+import './Box.css';
 
-function Box() {
+const Box = ({ width, height, backgroundColor }) => {
+
     return (
-        <div className="Box" >
-        </div >
+        <>
+            <div className="Box" style={{ width: width, height: height, backgroundColor: backgroundColor }}  >
+                <button>X</button>
+            </div>
+        </>
     );
 }
 
